@@ -48,7 +48,7 @@ mongodb+srv://firstData:<password>@cluster-iukdn.mongodb.net/test
 <collection> = "dics"
 
 ## To Explore All Structures of function API:
-- link: https://github.com/HieuuuLeee/heroku_app/tree/master/API_Design
+- link: https://github.com/NLPForPassion/WebBackEnd/tree/master/APIsDesign
 
 |Order | API Name | Completed | Describe |
 | :--- |:---------|:---------|:---------|
