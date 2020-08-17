@@ -5,8 +5,8 @@
 - ### Flask micro-framework
 - ### Heroku
 
-## How to connect the Heroku ANLAC App?
-- link API: https://anlacapp123.herokuapp.com/
+## How to connect the Heroku NLPForPassion App?
+- link API: https://nlpforpassion.herokuapp.com/
 
 
 ## Codes Dictionary:
@@ -23,54 +23,29 @@
 |104   | Phone has already existed |
 |105   | No result
 
-## Connect MongoDB Database:
-### Clean Data use for Client presentation:
+## Connect Dictionaries MongoDB Atlas Database:
 - Connect by shell: 
 ```sh
-mongo "mongodb+srv://cluster0-tvr7l.mongodb.net/<dbname>" --username firstData
+mongo "mongodb+srv://cluster-iukdn.mongodb.net/<dbname>" --username firstData
 ```
 - Connect by application: 
 ```sh
-uri = "mongodb+srv://firstData:<password>@cluster0-tvr7l.mongodb.net/<dbname>?retryWrites=true&w=majority"
+uri = "mongodb+srv://firstData:<password>@cluster-iukdn.mongodb.net/<dbname>?retryWrites=true&w=majority"
 ```
 ```sh
-uri = "mongodb+srv://firstData:"+ password +"@cluster0-tvr7l.mongodb.net/test?retryWrites=true&w=majority"
+uri = "mongodb+srv://firstData:"+ password +"@cluster-iukdn.mongodb.net/<dbname>?retryWrites=true&w=majority"
 client = MongoClient(uri)
-db = client.batdongsanRaw
-# collection: BDS, batdongsanraw, users
+db = client.dics
+# collection: dics
 ```
 - Connect by MongoDB Compass: 
 ```sh
-mongodb+srv://firstData:<password>@cluster0-tvr7l.mongodb.net/test
+mongodb+srv://firstData:<password>@cluster-iukdn.mongodb.net/test
 ```
 ```sh
 <password>  = "firstdata10"
-<dbname>    = "batdongsanRaw"
-```
-
-### Raw Data use for Exploring:
-- Connect by mongoDB shell: 
-```sh
-mongo "mongodb+srv://estateraw-ww6ya.mongodb.net/<dbname>" --username dataraw
-```
-- Connect by application (file .py): 
-```sh
-uri = "mongodb+srv://dataraw:<password>@estateraw-ww6ya.mongodb.net/test?retryWrites=true&w=majority"
-```
-```sh
-uri = "mongodb+srv://dataraw:<password>@estateraw-ww6ya.mongodb.net/test?retryWrites=true&w=majority"
-client = MongoClient(uri)
-db = client.dataraw
-# collection: estate
-```
-- Connect by MongoDB Compass: 
-```sh
-mongodb+srv://dataraw:<password>@estateraw-ww6ya.mongodb.net/test
-```
-```sh
-<password>  = "dataraw10"
-<dbname>    = "dataraw"
-```
+<dbname>    = "nlp"
+<collection> = "dics"
 
 ## To Explore All Structures of function API:
 - link: https://github.com/HieuuuLeee/heroku_app/tree/master/API_Design
